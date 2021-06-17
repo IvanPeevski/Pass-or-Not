@@ -1,0 +1,23 @@
+.table-hover tbody tr:hover td.answer-correct{
+  background-color: #48c248;
+}
+.answer-false{
+  background-color: rgb(245, 164, 71);
+}
+.table-hover tbody tr:hover td.answer-false{
+  background-color: rgb(247, 148, 35);
+}
+.score-container{
+  margin-top:4px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.score-text{
+  font-size: 26px;
+  text-align:left
+}
+.answer-correct{
+  background-color: #67e067;
+}

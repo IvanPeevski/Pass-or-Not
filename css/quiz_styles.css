@@ -1,0 +1,135 @@
+#quiz{
+  width:100%;
+}
+.question{
+  outline: none;
+  width: 70%;
+  box-sizing: border-box;
+  border: transparent;
+  border-bottom: 3px solid #ccc;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 12px 20px 12px 0px;
+  transition: border-bottom 0.4s ease-in-out;
+  overflow: hidden;
+}
+.question:focus{
+  border-bottom: 3px solid #555;
+}
+.questionBody{
+  background-color: rgb(245, 245, 245);
+  margin-top:5%;
+  width: 100%;
+  text-align: center;
+}
+
+.answer:checked ~ .option{
+  background-color: rgb(122, 183, 221);
+}
+.questionTitle{
+  border-top: solid rgb(228, 224, 224);
+  margin-bottom:5px;
+  font-size: 24px;
+}
+.DisplayBtn {
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+  background:linear-gradient(to bottom, #f24537 5%, #f05041 100%);
+  border:1px solid #d02718;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+  text-align: center;
+  margin-right:1px;
+}
+.DisplayBtn:hover {
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color:#c62d1f;
+}
+.DisplayBtn:active {
+  position:relative;
+  top:1px;
+}
+.red{
+  background-color:#e72b1a;
+}
+
+.blue{
+  background-color:rgb(0, 132, 255);
+}
+.custom-file-input:lang(bg)~.custom-file-label::after {
+  content: "Избери файл";
+}
+.inputGroup {
+  background-color: #fff;
+  display: block;
+  margin: 10px 0;
+  position: relative;
+}
+.inputGroup input[type="radio"]~ label, .inputGroup input[type="checkbox"]~ label {
+  padding: 12px 30px;
+  display: block;
+  text-align: left;
+  color: #3c454c;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+}
+
+.inputGroup input[type="radio"]~ label:after, .inputGroup input[type="checkbox"]~ label:after {
+  width: 32px;
+  height: 32px;
+  content: '';
+  border: 2px solid #d1d7dc;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.inputGroup input[type="radio"]~ label:after {
+border-radius: 50%;
+}
+.inputGroup input[type="radio"]~ label:before {
+border-radius: 50%;
+}
+.inputGroup input:checked ~ label {
+  color: #fff;
+}
+.inputGroup input:checked ~ label:before {
+  transform: translate(-50%, -50%) scale3d(56, 56, 1);
+  opacity: 1;
+}
+.inputGroup input:checked ~ label:after {
+  background-color: #54e0c7;
+  border-color: #54e0c7;
+}
+.inputGroup input[type="radio"],.inputGroup input[type="checkbox"]  {
+  width: 32px;
+  height: 32px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
+}
+.info{
+  padding: 35px 0;
+  font-size: 21px;
+}

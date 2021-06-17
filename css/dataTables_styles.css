@@ -1,0 +1,26 @@
+.dataTables_filter{
+  width:100%;
+  text-align: center !important;
+}
+.dataTables_filter label{
+  border: 1px solid #ced4da;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 4px;
+  width: 99%;
+  font-size: 24px;
+}
+.dataTables_filter label input{
+  text-align:center;
+  border: none;
+  margin:0 !important;
+}
+.dataTables_filter label:focus-within{
+  color: #495057;
+  border-color: #5c6b7a;
+  outline: 0;
+}
+table.dataTable thead tr,
+table.dataTable tfoot td,
+table.dataTable.no-footer{
+  border-bottom: none;
+}
