@@ -76,7 +76,7 @@
         $content[$i]['answers'][$a]['text'] = preg_replace("/'/m", '&apos;', $content[$i]['answers'][$a]['text']);
         $content[$i]['answers'][$a]['text'] = preg_replace("/\s+/m", ' ', $content[$i]['answers'][$a]['text']);
         $content[$i]['answers'][$a]['text'] = addslashes($content[$i]['answers'][$a]['text']);
-        $content[$i]['answers'][$a]['id'] = $a;
+        $content[$i]['answers'][$a]['id'] = $a; 
       }
     }
   }
